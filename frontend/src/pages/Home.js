@@ -27,6 +27,7 @@ function Home() {
       <div className="App-body">
         <ContentRec4 key="content-rec-4" title="" />
         <ContentRec2 key="content-rec-2" title="" />
+        <Feed number="5" />
         <Blackbords />
         <ContentRec5 key="content-rec-5" title="" />
       </div>
