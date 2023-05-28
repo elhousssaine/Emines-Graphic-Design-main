@@ -16,6 +16,10 @@ const testconnection = require("./routes/api/connectionTest");
 
 
 app.use(cors());
+app.get('/', (req, res) => {
+  res.setheader("Acess-Control-Allow-Credentials","true");
+  res.send("API is running..");
+});
 app.use(bodyParser.json({ limit: "2mb" }));
 app.use(bodyParser.urlencoded({ limit: "2mb", extended: false }));
 
