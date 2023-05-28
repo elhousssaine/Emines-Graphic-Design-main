@@ -9,7 +9,7 @@ export const registerUser = createAsyncThunk(
   "user/register",
   async (userData, { rejectWithValue, dispatch }) => {
     try {
-      await axios.post("/api/users/register", userData).then((res) => {
+      await axios.post("https://egx.onrender.com/api/users/register", userData).then((res) => {
         console.log(res);
         dispatch(setErrors({}));
       });
@@ -30,7 +30,7 @@ export const loginUser = createAsyncThunk(
   "user/login",
   async (userData, { rejectWithValue, dispatch }) => {
     const access = await axios
-      .post("/api/users/login", userData)
+      .post("https://egx.onrender.com/api/users/login", userData)
       .then((res) => {
         // Save to localStorage
         // Set token to localStorage
