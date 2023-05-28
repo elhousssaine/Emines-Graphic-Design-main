@@ -1,0 +1,88 @@
+.form-control {
+    background-color: #F70F3F3;
+    text-align: center;
+    margin-right: 35px;
+    
+
+}
+
+@media(min-width: 1065px) {
+    .form-control {
+        text-align: start;
+        
+    }
+}
+
+@media(min-width: 1065px) {
+    .form-control button {
+        margin: auto;
+        display: flex;
+        justify-content: center;
+    }
+}
+.contactForm h2 {
+    text-align: start;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 42px;
+    margin-right: 35px;
+}
+
+.contactForm {
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 27px;
+    width: 530px;
+    color: #2D2D2D;
+    margin-right: 40px;
+    margin-top: 60px;
+    margin-bottom: 45px;
+}
+
+.contactForm input {
+    width: 530px;
+    height: 70px;
+    left: calc(50% - 530px/2 + 457.5px);
+    top: calc(50% - 70px/2 + 2910px);
+    background: #F3F3F3;
+    border: 0px solid #000000;
+    margin-top: 39px;
+}
+
+.contactForm textarea {
+    margin-top: 39px;
+    width: 530px;
+    height: 209px;
+    left: calc(50% - 530px/2 + 457.5px);
+    top: calc(50% - 209px/2 + 3167.5px);
+    border: 0px solid #000000;
+    background: #F3F3F3;
+     
+}
+
+.contactForm button {
+    display: block;
+    border-radius: 0px;
+    width: 235px;
+    height: 80px;
+    margin-right: 35px;
+    
+}
+
+.btn:hover {
+    background-color: #676767;
+}
+
+.err_span {
+    color: red;
+    text-align: start;
+    display: flex;
+    margin: 0;
+}
+
+.err_span p {
+    color: red;
+    text-align: start;
+    font-size: small;
+    margin: 0;
+}

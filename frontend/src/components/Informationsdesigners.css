@@ -1,0 +1,19 @@
+.made_with_dark {
+    text-align: start;
+    margin-top: 30px;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 42px;
+    color: white;
+}
+
+.letswork {
+    color: white
+}
+.made_with_dark img{
+    position: absolute;
+    width: 275px;
+    height: 125px;
+    margin-top: 180px;
+    margin-left: 0px;
+}

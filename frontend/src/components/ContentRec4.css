@@ -1,0 +1,15 @@
+.RecContent4 {
+    box-sizing: border-box;
+    width: 93%;
+    height: auto;
+    border: 5px solid #000000;
+    border-radius: 0px;
+    
+    margin: auto; /* Add this line */
+    margin-bottom: 40px;
+    
+
+    
+
+}
+

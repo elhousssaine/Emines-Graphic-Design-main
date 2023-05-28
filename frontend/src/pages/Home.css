@@ -1,0 +1,39 @@
+.mygif {
+    width: 93%;
+    height: auto;
+    border: 5px solid #000000;
+    border-radius: 0px;
+    margin-bottom: 40px;
+    
+
+}
+.MainRec {
+    width: 33%;
+}
+.imagen {
+    width: 93%;
+    height: auto;
+    border: 5px solid #000000;
+    border-radius: 0px;
+    margin-bottom: 40px;
+    
+}
+
+.RecContent3 {
+    box-sizing: border-box;
+    height: 716px;
+    border: 5px solid #923464;
+    border-radius: 0px;
+    margin-bottom: 40px;
+    padding: 5px;
+    background-image: url("frame1worksh_00132.png");
+    
+
+}
+
+* {
+    font-family: 'Helvetica';
+    font-style: normal;
+
+}
+
