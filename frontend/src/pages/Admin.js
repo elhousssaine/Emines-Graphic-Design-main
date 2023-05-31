@@ -64,8 +64,8 @@ const Admin = () => {
   const [loading, setLoading] = useState(true);
   const [projects, setProjects] = useState([]);
   const [blogs, setBlogs] = useState([]);
-  const api_url_blog = "https://egx-front.onrender.com/api/blogs/getbyonwer/" + userInfo.id;
-  const api_url_project = "https://egx-front.onrender.com/api/projects/getbyowner/" + userInfo.id;
+  const api_url_blog = "https://egx.onrender.com/api/blogs/getbyonwer/" + userInfo.id;
+  const api_url_project = "https://egx.onrender.com/api/projects/getbyowner/" + userInfo.id;
 
   useEffect(() => {
     dispatch(setdark());
