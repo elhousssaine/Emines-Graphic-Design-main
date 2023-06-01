@@ -61,7 +61,7 @@ router.post("/add", upload.array("images", MAX_IMG_COUNT), (req, res, err) => {
   Object.keys(files).map((key, index) => {
     imgs_arr.push({
       id: path.parse(files[key].filename).name,
-      path_url: "/public/images/" + files[key].filename,
+      path_url: "https://egx.onrender.com/public/images/" + files[key].filename,
       ext: path.extname(files[key].originalname),
       alt: "Project Image",
     });
