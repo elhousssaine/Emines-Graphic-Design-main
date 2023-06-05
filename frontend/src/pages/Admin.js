@@ -99,7 +99,7 @@ const Admin = () => {
       return (
         <div className="admin_page">
           <section className="admin_section">
-            <img src="/doc/admin/Admin_Back.png"></img>
+            <img src="/doc/admin/ezgif.com-video-to-gif22.gif"></img>
             <br />
             <span className="subtitle_admin">
               This is the admin page, it allows you to manage and edit your
