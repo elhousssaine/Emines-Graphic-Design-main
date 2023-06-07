@@ -17,11 +17,9 @@
 
 @media(max-width: 1065px) {
 
-    .footer__info p,
-    .footer__info h2,
-    .footer__info a,
-    .logofooter,
-    .icons_group_contact {
+
+    .logofooter {
+        margin-top: -130px;
         text-align: center;
     }
 }
