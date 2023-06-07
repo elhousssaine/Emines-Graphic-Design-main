@@ -1,0 +1,17 @@
+.feed-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(300px, 1fr));
+  grid-gap: 20px;
+  margin: 42px;
+}
+
+.grid-item {
+  /* Add your custom styles for each grid item here */
+}
+
+/* Media query for mobile devices */
+@media (max-width: 768px) {
+  .feed-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
