@@ -19,6 +19,33 @@
     
 }
 
+.App-footer {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footer-contact {
+  order: 2; /* Default order for desktop view */
+}
+
+.footer-information {
+  order: 1; /* Default order for desktop view */
+}
+
+/* Media Query for Desktop View */
+@media (max-width: 768px) {
+  .footer-contact {
+    order: 1; /* Updated order for desktop view */
+    width: auto; /* Adjust width as needed for desktop view */
+    margin-left: 30px;
+  }
+
+  .footer-information {
+    order: 2; /* Updated order for desktop view */
+    width: auto; /* Adjust width as needed for desktop view */
+    margin-left: -37px;
+  }
+}
 .RecContent3 {
     box-sizing: border-box;
     height: 716px;
