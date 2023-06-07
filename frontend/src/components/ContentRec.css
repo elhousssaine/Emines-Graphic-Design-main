@@ -12,10 +12,15 @@
 
 
 }
+.backgroundvid {
+    background-image: url('D:\Emines-Graphic-Design-main\frontend\public\ezgif.com-video-to-gif (3).gif');
+    background-size: cover;
+    
+}
 .title__RecContent {
     font-weight: 600;
-    font-size: 100px;
-    line-height: 102px;
+    font-size: 6vw;
+    line-height: 7vw;
     /* display: flex;
     align-items: center; */
     margin: 3%;
@@ -24,7 +29,7 @@
 
 .subtitle__RecContent {
     font-weight: 400;
-    font-size: 15px;
+    font-size: 19px;
     line-height: 27px;
     margin-bottom: 4%;
     margin-left: 3%;
