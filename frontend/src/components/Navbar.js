@@ -50,7 +50,7 @@ function Navbar() {
         
       }}
     >
-      <div className="container-fluid">
+      
         <NavLink
           to="/"
           id="LogoText"
@@ -97,7 +97,7 @@ function Navbar() {
               </NavLink>
             </li>
             <li
-              className="nav-item ms-auto p-2"
+              className="nav-item p-2"
               onClick={() => {
                 window.location.replace("/#footer_section_id");
               }}
@@ -111,7 +111,7 @@ function Navbar() {
               </NavLink>
             </li>
             {!isAuthenticated && (
-              <li className="nav-item ms-auto p-2">
+              <li className="nav-item  p-2">
                 <NavLink
                   to="/login"
                   className="nav-link active"
@@ -122,7 +122,7 @@ function Navbar() {
               </li>
             )}
           </ul>
-        </div>
+        
       </div>
     </nav>
   );
