@@ -41,7 +41,7 @@
 }
 
 .contactForm input {
-    width: 31em;
+    width: 36vw;
     height: 70px;
     left: calc(50% - 530px/2 + 457.5px);
     top: calc(50% - 70px/2 + 2910px);
@@ -52,7 +52,7 @@
 
 .contactForm textarea {
     margin-top: 39px;
-    width: 36vh;
+    width: 36vw;
     height: 209px;
     left: calc(50% - 530px/2 + 457.5px);
     top: calc(50% - 209px/2 + 3167.5px);
