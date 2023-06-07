@@ -64,8 +64,8 @@ const Admin = () => {
   const [loading, setLoading] = useState(true);
   const [projects, setProjects] = useState([]);
   const [blogs, setBlogs] = useState([]);
-  const api_url_blog = "https://egx.onrender.com/api/blogs/getbyonwer/" + userInfo.id;
-  const api_url_project = "https://egx.onrender.com/api/projects/getbyowner/" + userInfo.id;
+  const api_url_blog = "/api/blogs/getbyonwer/" + userInfo.id;
+  const api_url_project = "/api/projects/getbyowner/" + userInfo.id;
 
   useEffect(() => {
     dispatch(setdark());
@@ -99,12 +99,51 @@ const Admin = () => {
       return (
         <div className="admin_page">
           <section className="admin_section">
-            <img src="/doc/admin/ezgif.com-video-to-gif22.gif"></img>
+            <img src="/doc/admin/Admin_Back.gif"></img>
             <br />
-            <span className="subtitle_admin">
-              This is the admin page, it allows you to manage and edit your
-              blogs and projects
-            </span>
+
+          </section>
+          <section className="portfolio_project_section">
+            <div className="row">
+              <h1 className="section_title col">
+                PROJECT
+                <br />
+                DASH
+              </h1>
+              <NavLink
+                className="col tlines"
+                to="/"
+                style={{ textDecoration: "none" }}
+              >
+                {tlines}
+              </NavLink>
+            </div>
+            <div className="row">
+                <div className="project-grid">
+                  {projects.map((project, i) => {
+                    if (project.imgs[0] && i < DISPLAY_LIMIT_PROJECT)
+                      return (
+                        <NavLink
+                          to={"/project/" + project._id}
+                          style={{ textDecoration: "none" }}
+                          className="project-item"
+                        >
+                          <img
+                            src={project.imgs[0].path_url}
+                            className="d-flex project_image_portfolio"
+                          ></img>
+                        </NavLink>
+                      );
+                  })}
+                </div>
+            </div>
+            <NavLink to="/admin/upload" style={{ textDecoration: "none" }}>
+              <div className="row d-flex flex-column ">
+                <i className="ibb">
+                  {Plusicon} {HL} ADD PROJECT
+                </i>
+              </div>
+            </NavLink>
           </section>
           <section className="portfolio_blog_section">
             <div className="row">
@@ -149,45 +188,7 @@ const Admin = () => {
               </NavLink>
             </div>
           </section>
-          <section className="portfolio_project_section">
-            <div className="row">
-              <h1 className="section_title col">
-                PROJECT
-                <br />
-                DASH
-              </h1>
-              <NavLink
-                className="col tlines"
-                to="/"
-                style={{ textDecoration: "none" }}
-              >
-                {tlines}
-              </NavLink>
-            </div>
-            <div className="row">
-              {projects.map((project, i) => {
-                if (project.imgs[0] && i < DISPLAY_LIMIT_PROJECT)
-                  return (
-                    <NavLink
-                      to={"/project/" + project._id}
-                      style={{ textDecoration: "none" }}
-                    >
-                      <img
-                        src={project.imgs[0].path_url}
-                        className="d-flex project_image_portfolio"
-                      ></img>
-                    </NavLink>
-                  );
-              })}
-            </div>
-            <NavLink to="/admin/upload" style={{ textDecoration: "none" }}>
-              <div className="row d-flex flex-column ">
-                <i className="ibb">
-                  {Plusicon} {HL} ADD PROJECT
-                </i>
-              </div>
-            </NavLink>
-          </section>
+          
 
           <button className="btn btn-light my-5" onClick={handleLogout}>
             Logout
