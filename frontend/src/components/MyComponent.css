@@ -1,0 +1,24 @@
+.MyComponent {
+  display: inline-block;
+  position: relative;
+}
+
+.MyComponent img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.MyComponent:hover img {
+  opacity: 1;
+}
+
+.MyComponent span {
+  display: inline-block;
+  padding: 10px;
+  background-color: #f1f1f1;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
