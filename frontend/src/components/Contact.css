@@ -11,6 +11,25 @@
         text-align: start;
         
     }
+    .contactForm input {
+    width: 36vw;
+    height: 70px;
+    left: calc(50% - 530px/2 + 457.5px);
+    top: calc(50% - 70px/2 + 2910px);
+    background: #F3F3F3;
+    border: 0px solid #000000;
+    margin-top: 39px;
+}
+    .contactForm textarea {
+    margin-top: 39px;
+    width: 36vw;
+    height: 209px;
+    left: calc(50% - 530px/2 + 457.5px);
+    top: calc(50% - 209px/2 + 3167.5px);
+    border: 0px solid #000000;
+    background: #F3F3F3;
+     
+}
     
 }
 
@@ -20,6 +39,26 @@
         display: flex;
         justify-content: start;
     }
+    .contactForm input {
+    width: 29em;
+    height: 70px;
+    left: calc(50% - 530px/2 + 457.5px);
+    top: calc(50% - 70px/2 + 2910px);
+    background: #F3F3F3;
+    border: 0px solid #000000;
+    margin-top: 39px;
+}
+    .contactForm textarea {
+    margin-top: 39px;
+    width: 29em;
+    height: 209px;
+    left: calc(50% - 530px/2 + 457.5px);
+    top: calc(50% - 209px/2 + 3167.5px);
+    border: 0px solid #000000;
+    background: #F3F3F3;
+     
+}
+
 }
 .contactForm h2 {
     text-align: start;
@@ -40,26 +79,8 @@
     margin-bottom: 45px;
 }
 
-.contactForm input {
-    width: 36vw;
-    height: 70px;
-    left: calc(50% - 530px/2 + 457.5px);
-    top: calc(50% - 70px/2 + 2910px);
-    background: #F3F3F3;
-    border: 0px solid #000000;
-    margin-top: 39px;
-}
 
-.contactForm textarea {
-    margin-top: 39px;
-    width: 36vw;
-    height: 209px;
-    left: calc(50% - 530px/2 + 457.5px);
-    top: calc(50% - 209px/2 + 3167.5px);
-    border: 0px solid #000000;
-    background: #F3F3F3;
-     
-}
+
 
 .contactForm button {
     display: block;
