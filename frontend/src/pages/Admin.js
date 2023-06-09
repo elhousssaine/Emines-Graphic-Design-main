@@ -65,8 +65,8 @@ const Admin = () => {
   const [projects, setProjects] = useState([]);
   const [blogs, setBlogs] = useState([]);
   const base_url = "https://egx.onrender.com";
-  const api_url_project = `${base_url}/api/projects/getbyowner/${userInfo.id}`;
-  const api_url_blog = "${base_url}/api/blogs/getbyonwer/" + userInfo.id;
+  const api_url_project = `https://egx.onrender.com/api/projects/getbyowner/${userInfo.id}`;
+  const api_url_blog = "https://egx.onrender.com/api/blogs/getbyonwer/" + userInfo.id;
 
   useEffect(() => {
     dispatch(setdark());
@@ -100,7 +100,7 @@ const Admin = () => {
       return (
         <div className="admin_page">
           <section className="admin_section">
-            <img src="${base_url}/doc/admin/Admin_Back.gif"></img>
+            <img src="https://egx.onrender.com/doc/admin/Admin_Back.gif"></img>
             <br />
 
           </section>
@@ -125,7 +125,7 @@ const Admin = () => {
                     if (project.imgs[0] && i < DISPLAY_LIMIT_PROJECT)
                       return (
                         <NavLink
-                          to={"${base_url}/project/" + project._id}
+                          to={"https://egx.onrender.com/project/" + project._id}
                           style={{ textDecoration: "none" }}
                           className="project-item"
                         >
