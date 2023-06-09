@@ -98,7 +98,101 @@ const Admin = () => {
     if (projects.length > 0 || !loading) {
       return (
         <div className="admin_page">
-          {/* Rest of the JSX code */}
+                    <section className="admin_section">
+            <img src="/doc/admin/Admin_Back.gif"></img>
+            <br />
+
+          </section>
+          <section className="portfolio_project_section">
+            <div className="row">
+              <h1 className="section_title col">
+                PROJECT
+                <br />
+                DASH
+              </h1>
+              <NavLink
+                className="col tlines"
+                to="/"
+                style={{ textDecoration: "none" }}
+              >
+                {tlines}
+              </NavLink>
+            </div>
+            <div className="row">
+                <div className="project-grid">
+                  {projects.map((project, i) => {
+                    if (project.imgs[0] && i < DISPLAY_LIMIT_PROJECT)
+                      return (
+                        <NavLink
+                          to={"/project/" + project._id}
+                          style={{ textDecoration: "none" }}
+                          className="project-item"
+                        >
+                          <img
+                            src={project.imgs[0].path_url}
+                            className="d-flex project_image_portfolio"
+                          ></img>
+                        </NavLink>
+                      );
+                  })}
+                </div>
+            </div>
+            <NavLink to="/admin/upload" style={{ textDecoration: "none" }}>
+              <div className="row d-flex flex-column ">
+                <i className="ibb">
+                  {Plusicon} {HL} ADD PROJECT
+                </i>
+              </div>
+            </NavLink>
+          </section>
+          <section className="portfolio_blog_section">
+            <div className="row">
+              <h1 className="section_title col">
+                BLOG
+                <br />
+                DASH
+              </h1>
+              <NavLink
+                className="col tlines"
+                to="/"
+                style={{ textDecoration: "none" }}
+              >
+                {tlines}
+              </NavLink>
+            </div>
+            <div className="news">
+              {blogs.map((blog, i) => {
+                if (i < DISPLAY_LIMIT_BLOG && i % 2 == 0) {
+                  return (
+                    <div className="row">
+                      <div className="col mx-2 my-2">
+                        <h2>{blog.title}</h2>
+                        <p className="lead py-2">{blog.date}</p>
+                      </div>
+                      {blogs[i + 1] && (
+                        <div className="col mx-2 my-2">
+                          <h2>{blogs[i + 1].title}</h2>
+                          <p className="lead py-2">{blogs[i + 1].date}</p>
+                        </div>
+                      )}
+                    </div>
+                  );
+                }
+              })}
+              <NavLink to="/admin/addblog" style={{ textDecoration: "none" }}>
+                <div className="row d-flex flex-column ">
+                  <i className="ibb">
+                    {Plusicon} {HL} ADD BLOG
+                  </i>
+                </div>
+              </NavLink>
+            </div>
+          </section>
+          
+
+          <button className="btn btn-light my-5" onClick={handleLogout}>
+            Logout
+          </button>
         </div>
       );
     } else {
@@ -107,7 +201,23 @@ const Admin = () => {
   } else {
     return (
       <div>
-        {/* Rest of the JSX code */}
+        <h1 className="my-4">ADMIN HAS NO PORTFOLIO</h1>
+        <p>
+          Login as User
+          <br /> or, Go to add designer page
+        </p>
+        <button
+          className="btn btn-success mx-2"
+          onClick={() => {
+            navigate("/admin/register");
+          }}
+        >
+          Add Designer
+        </button>
+        or
+        <button className="btn btn-secondary mx-2 my-4" onClick={handleLogout}>
+          Logout
+        </button>
       </div>
     );
   }
