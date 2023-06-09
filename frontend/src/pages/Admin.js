@@ -70,30 +70,29 @@ const Admin = () => {
 
   useEffect(() => {
     dispatch(setdark());
-    const getProject = async () => {
-      setLoading(true);
-      const resp = await axios
-        .get(api_url_project)
-        .then((res) => {
-          return res.data;
-        })
-        .catch((err) => {
-          console.log(err);
-        });
-      setProjects(resp);
-      const resp2 = await axios
-        .get(api_url_blog)
-        .then((res) => {
-          return res.data;
-        })
-        .catch((err) => {
-          console.log(err);
-        });
-      setBlogs(resp2);
-      setLoading(false);
-    };
-    getProject();
-  }, []);
+    const apiClient = axios.create({
+  baseURL: 'https://egx.onrender.com', // Replace with your backend API URL
+});
+
+const getProject = async () => {
+  setLoading(true);
+  try {
+    const resp = await apiClient.get('/api/project');
+    setProjects(resp.data);
+    
+    const resp2 = await apiClient.get('/api/blog');
+    setBlogs(resp2.data);
+  } catch (error) {
+    console.error('Error fetching project:', error);
+    // Handle the error appropriately
+  } finally {
+    setLoading(false);
+  }
+};
+
+useEffect(() => {
+  getProject();
+}, []);
 
   if (!userInfo.isAdmin) {
     if (projects.length > 0 || !loading) {
@@ -125,7 +124,7 @@ const Admin = () => {
                     if (project.imgs[0] && i < DISPLAY_LIMIT_PROJECT)
                       return (
                         <NavLink
-                          to={"https://egx.onrender.com/project/" + project._id}
+                          to={"/project/" + project._id}
                           style={{ textDecoration: "none" }}
                           className="project-item"
                         >
