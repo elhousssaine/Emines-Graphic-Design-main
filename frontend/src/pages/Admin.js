@@ -87,7 +87,7 @@ const Admin = () => {
         .catch((err) => {
           console.log(err);
         });
-      setProjects(resp);
+        setProjects(resp);
 
         const resp2 = await apiClient
         .get(api_url_blog)
