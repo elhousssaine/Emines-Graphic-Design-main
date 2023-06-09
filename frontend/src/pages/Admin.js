@@ -66,8 +66,8 @@ const Admin = () => {
   const [projects, setProjects] = useState([]);
   const [blogs, setBlogs] = useState([]);
   const base_url = "https://egx.onrender.com";
-  const api_url_project = `https://egx.onrender.com/api/projects/getbyowner/${userInfo.id}`;
-  const api_url_blog = "https://egx.onrender.com/api/blogs/getbyonwer/" + userInfo.id;
+  const api_url_project = `/api/projects/getbyowner/${userInfo.id}`;
+  const api_url_blog = "/api/blogs/getbyonwer/" + userInfo.id;
 
   useEffect(() => {
     dispatch(setdark());
@@ -79,7 +79,7 @@ const Admin = () => {
       setLoading(true);
       try {
         const resp = await apiClient
-        .get('/api/projects/getbyowner/');
+        .get(api_url_project);
         setProjects(resp.data)
         .then((res) => {
           return res.data;
@@ -90,7 +90,7 @@ const Admin = () => {
       setProjects(resp);
 
         const resp2 = await apiClient
-        .get('/api/blogs/getbyowner/')
+        .get(api_url_blog)
         .then((res) => {
           return res.data;
         })
