@@ -80,14 +80,14 @@ const Admin = () => {
       try {
         const resp = await apiClient
         .get(api_url_project);
-        setProjects(resp.data)
+        
         .then((res) => {
           return res.data;
         })
         .catch((err) => {
           console.log(err);
         });
-      setProjects(resp);
+      setProjects(resp.data);
 
         const resp2 = await apiClient
         .get(api_url_blog)
@@ -114,7 +114,7 @@ const Admin = () => {
       return (
         <div className="admin_page">
                     <section className="admin_section">
-            <img src="/doc/admin/Admin_Back.gif"></img>
+            <img src="/public/doc/admin/Admin_Back.gif"></img>
             <br />
 
           </section>
