@@ -78,10 +78,25 @@ const Admin = () => {
     const getProject = async () => {
       setLoading(true);
       try {
-        const resp = await apiClient.get('/api/projects/getbyowner/');
-        setProjects(resp.data);
+        const resp = await apiClient
+        .get('/api/projects/getbyowner/');
+        setProjects(resp.data)
+        .then((res) => {
+          return res.data;
+        })
+        .catch((err) => {
+          console.log(err);
+        });
+      setProjects(resp);
 
-        const resp2 = await apiClient.get('/api/blogs/getbyowner/');
+        const resp2 = await apiClient
+        .get('/api/blogs/getbyowner/')
+        .then((res) => {
+          return res.data;
+        })
+        .catch((err) => {
+          console.log(err);
+        });
         setBlogs(resp2.data);
       } catch (error) {
         console.error('Error fetching project:', error);
