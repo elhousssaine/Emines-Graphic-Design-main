@@ -100,7 +100,7 @@ const Admin = () => {
       return (
         <div className="admin_page">
           <section className="admin_section">
-            <img src="/doc/admin/Admin_Back.gif"></img>
+            <img src="${base_url}/doc/admin/Admin_Back.gif"></img>
             <br />
 
           </section>
@@ -125,7 +125,7 @@ const Admin = () => {
                     if (project.imgs[0] && i < DISPLAY_LIMIT_PROJECT)
                       return (
                         <NavLink
-                          to={"/project/" + project._id}
+                          to={"${base_url}/project/" + project._id}
                           style={{ textDecoration: "none" }}
                           className="project-item"
                         >
