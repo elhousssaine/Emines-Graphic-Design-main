@@ -15,17 +15,25 @@ const tlines = (
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
   >
-    <!-- SVG paths here -->
+    <path d="M28.1739 115.826V144H0V115.826H28.1739Z" fill="white" />
+    <path d="M115.826 115.826V144H144V115.826H115.826Z" fill="white" />
+    <path d="M56.3477 87.6523V115.826H28.1738V87.6523H56.3477Z" fill="white" />
+    <path d="M87.6523 87.6523V115.826H115.826V87.6523H87.6523Z" fill="white" />
+    <path d="M87.6525 56.3477V87.652H56.3481V56.3477H87.6525Z" fill="white" />
+    <path d="M56.348 56.3477V87.652H87.6523V56.3477H56.348Z" fill="white" />
+    <path d="M115.826 28.1738V56.3477H87.6523V28.1738H115.826Z" fill="white" />
+    <path d="M28.1742 28.1738V56.3477H56.3481V28.1738H28.1742Z" fill="white" />
+    <path d="M144 0V28.1739H115.826V0H144Z" fill="white" />
+    <path d="M-7.43866e-05 0V28.1739H28.1738V0H-7.43866e-05Z" fill="white" />
   </svg>
 );
-
 const Plusicon = (
   <svg
     className="plus_icon1"
     xmlns="http://www.w3.org/2000/svg"
     viewBox="0 0 448 512"
   >
-    <!-- SVG paths here -->
+    <path d="M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32V224H48c-17.7 0-32 14.3-32 32s14.3 32 32 32H192V432c0 17.7 14.3 32 32 32s32-14.3 32-32V288H400c17.7 0 32-14.3 32-32s-14.3-32-32-32H256V80z" />
   </svg>
 );
 
@@ -38,7 +46,7 @@ const HL = (
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
   >
-    <!-- SVG paths here -->
+    <path d="M4.10156 0V24V48" stroke="white" stroke-width="7" />
   </svg>
 );
 
