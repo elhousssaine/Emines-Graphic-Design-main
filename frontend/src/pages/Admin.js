@@ -85,7 +85,8 @@ const Admin = () => {
         setBlogs(resp2.data);
       } catch (error) {
         console.error('Error fetching project:', error);
-        // Handle the error appropriately
+        console.error('Error response:', error.response); // Add this line
+            // Handle the error appropriately
       } finally {
         setLoading(false);
       }
