@@ -81,15 +81,17 @@ const Admin = () => {
         const resp = await apiClient.get('/api/project');
         setProjects(resp.data);
 
-        const resp2 = await apiClient.get('/api/blog');
-        setBlogs(resp2.data);
-      } catch (error) {
-        console.error('Error fetching project:', error);
-        // Handle the error appropriately
-      } finally {
+        const resp2 = await axios
+          .get(api_url_blog)
+          .then((res) => {
+            return res.data;
+          })
+          .catch((err) => {
+            console.log(err);
+          });
+        setBlogs(resp2);
         setLoading(false);
-      }
-    };
+      };
 
     getProject();
   }, []); // <-- Add closing parenthesis here
