@@ -78,7 +78,7 @@ const Admin = () => {
   const getProject = async () => {
       setLoading(true);
       try {
-        const resp = await apiClient.get('/api/project');
+        const resp = await apiClient.get('/api/projects/getbyowner/'+ userInfo.id);
         setProjects(resp.data);
 
         const resp2 = await apiClient.get('/api/blog');
