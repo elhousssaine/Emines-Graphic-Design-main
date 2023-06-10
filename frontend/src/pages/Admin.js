@@ -79,10 +79,10 @@ const Admin = () => {
       setLoading(true);
       try {
         const resp = await apiClient.get("/api/projects/getbyowner/" + userInfo.id);
-        Projects(resp.data);
+        setProjects(resp.data);
 
         const resp2 = await apiClient.get("/api/blogs/getbyowner/" + userInfo.id);
-        Blogs(resp2);
+        setBlogs(resp2.data);
       } catch (error) {
         console.error('Error fetching project:', error);
         // Handle the error appropriately
