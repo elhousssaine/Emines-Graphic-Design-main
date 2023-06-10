@@ -65,7 +65,7 @@ const Admin = () => {
   const [loading, setLoading] = useState(true);
   const [projects, setProjects] = useState([]);
   const [blogs, setBlogs] = useState([]);
-  const base_url = "https://egx.onrender.com";
+  const base_url = "https://egx-front.onrender.com";
   const api_url_project = `/api/projects/getbyowner/${userInfo.id}`;
   const api_url_blog = "/api/blogs/getbyonwer/" + userInfo.id;
 
