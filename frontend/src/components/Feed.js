@@ -12,6 +12,9 @@ function Feed(props) {
   const [homeProjects, setHomeProjects] = useState([]);
 
   useEffect(() => {
+      const apiClient = axios.create({
+      baseURL: 'https://egx.onrender.com', // Replace with your backend API URL
+    });
     const fetchData = async () => {
       setLoading(true);
       const resp = await axios
