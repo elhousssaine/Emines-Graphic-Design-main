@@ -37,6 +37,7 @@ function Home() {
         <ContentRec2 key="content-rec-2" title="" />
         <Blackbords />
         <MyComponent />
+        <Feed number="5" />
         <ContentRec5 key="content-rec-5" title="" />
       </div>
       <div className="MainRec">
