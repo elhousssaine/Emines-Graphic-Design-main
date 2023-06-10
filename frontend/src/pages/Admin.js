@@ -75,28 +75,13 @@ const Admin = () => {
       baseURL: 'https://egx.onrender.com', // Replace with your backend API URL
     });
 
-    const getProject = async () => {
+  const getProject = async () => {
       setLoading(true);
       try {
-        const resp = await apiClient
-        .get(api_url_project);
-        
-        .then((res) => {
-          return res.data;
-        })
-        .catch((err) => {
-          console.log(err);
-        });
+        const resp = await apiClient.get('/api/project');
         setProjects(resp.data);
 
-        const resp2 = await apiClient
-        .get(api_url_blog)
-        .then((res) => {
-          return res.data;
-        })
-        .catch((err) => {
-          console.log(err);
-        });
+        const resp2 = await apiClient.get('/api/blog');
         setBlogs(resp2.data);
       } catch (error) {
         console.error('Error fetching project:', error);
