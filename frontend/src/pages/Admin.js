@@ -82,7 +82,7 @@ const Admin = () => {
         setProjects(resp.data);
 
         const resp2 = await apiClient.get("/api/blogs/getbyowner/" + userInfo.id);
-        setBlogs(resp2.data);
+        setBlogs(resp2);
       } catch (error) {
         console.error('Error fetching project:', error);
         // Handle the error appropriately
