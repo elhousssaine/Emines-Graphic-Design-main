@@ -1,6 +1,7 @@
 import "./Home.css";
 import Contact from "../components/Contact";
-import Feed from "../components/Feed";
+import 
+from "../components/Feed";
 import Informations from "../components/Informations";
 import MainRec from "../components/MainRec";
 import "../components/Navbar";
@@ -37,7 +38,6 @@ function Home() {
         <ContentRec2 key="content-rec-2" title="" />
         <Blackbords />
         <MyComponent />
-        <Feed number="5" />
         <ContentRec5 key="content-rec-5" title="" />
       </div>
       <div className="MainRec">
