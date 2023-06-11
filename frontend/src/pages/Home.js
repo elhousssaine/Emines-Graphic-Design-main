@@ -1,7 +1,6 @@
 import "./Home.css";
 import Contact from "../components/Contact";
-import 
-from "../components/Feed";
+import Feed from "../components/Feed";
 import Informations from "../components/Informations";
 import MainRec from "../components/MainRec";
 import "../components/Navbar";
