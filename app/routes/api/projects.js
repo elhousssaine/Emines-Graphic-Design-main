@@ -8,7 +8,7 @@ const validateAddProjectInput = require("../../validation/project");
 
 const storage = multer.diskStorage({
   destination: (req, file, cb) => {
-    cb(null, "../app/public/images/");
+    cb(null, "https://egx.onrender.com/app/public/images/");
   },
   filename: (req, file, cb) => {
     cb(
@@ -61,7 +61,7 @@ router.post("/add", upload.array("images", MAX_IMG_COUNT), (req, res, err) => {
   Object.keys(files).map((key, index) => {
     imgs_arr.push({
       id: path.parse(files[key].filename).name,
-      path_url: "https://egx.onrender.com/public/images/" + files[key].filename,
+      path_url: "/public/images/" + files[key].filename,
       ext: path.extname(files[key].originalname),
       alt: "Project Image",
     });
