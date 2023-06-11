@@ -15,7 +15,7 @@ const Contact = () => {
   const navigate = useNavigate();
 
   const onSubmitForm = (data) => {
-    const post_url = "/api/messages/add";
+    const post_url = "https://egx.onrender.com/api/messages/add";
     axios
       .post(post_url, data)
       .then((res) => {
