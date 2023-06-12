@@ -39,19 +39,19 @@ function Home() {
         <MyComponent />
                        <div className="feed-grid">
               <div className="RecContentf  full-height d-flex flex-column">
-            <img src="/public/images/d5b5fd2b-3aa8-4a92-9b0f-1bf09fd9bddc-1685999424447.png" alt="a balloon" class="myimg"></img><div className="row title__RecContentf">Fresh Alternative To Traditional Agencies</div>
+            <img src="d5b5fd2b-3aa8-4a92-9b0f-1bf09fd9bddc-1685999424447.png" alt="a balloon" class="myimg"></img><div className="row title__RecContentf">Fresh Alternative To Traditional Agencies</div>
       <div className="row mt-auto">
         <div className="col subtitle__RecContentf">Our vibrant community of university students, backed by UM6P's state-of-the-art facilities, delivers a dynamic blend of youth and innovation.</div>
       </div>
       </div>
       <div className="RecContentf  full-height d-flex flex-column">
-            <img src="/public/images/8511afcb-4125-47ff-8959-051de290d75c-1685999386255.png" alt="a balloon" class="myimg"></img><div className="row title__RecContentf">Fresh Alternative To Traditional Agencies</div>
+            <img src="8511afcb-4125-47ff-8959-051de290d75c-1685999386255.png" alt="a balloon" class="myimg"></img><div className="row title__RecContentf">Fresh Alternative To Traditional Agencies</div>
       <div className="row mt-auto">
         <div className="col subtitle__RecContentf">Our vibrant community of university students, backed by UM6P's state-of-the-art facilities, delivers a dynamic blend of youth and innovation.</div>
       </div>
       </div>
       <div className="RecContentf  full-height d-flex flex-column">
-            <img src="/public/images/d5b5fd2b-3aa8-4a92-9b0f-1bf09fd9bddc-1685999424447.png" alt="a balloon" class="myimg"></img><div className="row title__RecContentf">Fresh Alternative To Traditional Agencies</div>
+            <img src="d5b5fd2b-3aa8-4a92-9b0f-1bf09fd9bddc-1685999424447.png" alt="a balloon" class="myimg"></img><div className="row title__RecContentf">Fresh Alternative To Traditional Agencies</div>
       <div className="row mt-auto">
         <div className="col subtitle__RecContentf">Our vibrant community of university students, backed by UM6P's state-of-the-art facilities, delivers a dynamic blend of youth and innovation.</div>
       </div>
