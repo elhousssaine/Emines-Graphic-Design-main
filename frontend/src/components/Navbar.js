@@ -74,14 +74,10 @@ function Navbar() {
           <ul className="navbar-nav d-flex ms-auto nav-list">
             <li
               className="nav-item p-2"
-              onClick={() => {
-                window.location.replace("/#footer_section_id");
-              }}
             >
               <NavLink
-                to="/#footer_section_id"
+                to="/about"
                 className="nav-link active"
-                aria-current="page"
                 style={{ color: light ? "#000000" : "white" }}
               >
                 About
