@@ -5,6 +5,7 @@ import { Provider } from "react-redux";
 import store from "./store";
 import "./index.css";
 import Home from "./pages/Home";
+import About from "./pages/About";
 import Layout from "./pages/Layout";
 import Project from "./pages/Project";
 import Nopage from "./pages/Nopage";
@@ -29,6 +30,7 @@ root.render(
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
           <Route path="project/:prjId" element={<Project />} />
+           <Route path="about" element={<About />} />
           <Route
             path="admin"
             element={
