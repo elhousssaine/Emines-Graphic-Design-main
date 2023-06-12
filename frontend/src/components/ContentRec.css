@@ -1,46 +1,141 @@
-import React from "react";
-import "./ContentRec.css";
-import { NavLink } from "react-router-dom";
-
-
-function ContentRec(props) {
-  let Styles = {
-    color: "red",
-    backgroundSize: "cover",
-  };
-
-  if (props.isImg === true) {
-    const url_img = props.imgUrl;
-    const back_img = "url(" + url_img + ")";
-    const backimg = "url(ezgif.com-gif-maker.gif)"
+.RecContent {
+    box-sizing: border-box;
+    width: 93%;
+    height: auto;
+    border: 5px solid #000000;
+    border-radius: 0px;
     
-  } else {
-        
-    Styles.backgroundImage =
-      "linear-gradient(180deg," +
-      props.hex1 +
-      " 0%, " +
-      props.hex2 +
-      " 98.96%)";
-  }
+    margin: auto; /* Add this line */
+    margin-bottom: 40px;
+    
 
-  return (
-    <NavLink
-      to={props.isClickImg ? "/project/" + props.prjId : "/"}
-      style={{ textDecoration: "none" }}
-    >
-      <div
-        className="RecContent  full-height d-flex flex-column"
-        
-      >
-       {props.isImg ? <img src={props.imgUrl} alt="a balloon" className="myimg" /> : null}
-        <div className="row title__RecContent">{props.title}</div>
-        <div className="row mt-auto">
-          <div className="col subtitle__RecContent">{props.parag1}</div>
-        </div>
-      </div>
-    </NavLink>
-  );
+
+
+}
+.RecContentf {
+    box-sizing: border-box;
+    width: 93%;
+    height: auto;
+    border: 5px solid #000000;
+    border-radius: 0px;
+    
+    margin: auto; /* Add this line */
+    margin-bottom: 40px;
+    
+
+
+
+}
+.RecContentportfolio:hover {
+    transform: scale(1.009);
+    background: black;
+    z-index: 1.3;
+    
+    
+    
+}
+.RecContentportfolio {
+    box-sizing: border-box;
+    width: 93%;
+    height: auto;
+    border: 5px solid #000000;
+    border-radius: 0px;
+    
+    margin: auto; /* Add this line */
+    margin-bottom: 40px;
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+
+
+
+}
+.RecContentf:hover {
+    transform: scale(1.009);
+    background: black;
+    z-index: 1.3;
+}
+.RecContentf:hover .title__RecContentf {
+  color: white;
+}
+.RecContentf:hover .subtitle__RecContentf {
+  color: white;
+}
+.backgroundvid {
+    background-image: url('https://s11.gifyu.com/images/SuUWg.gif');
+    background-size: cover;
+    
+}
+.title__RecContent {
+    font-weight: 600;
+    font-size: 6vw;
+    line-height: 7vw;
+    /* display: flex;
+    align-items: center; */
+    margin: 3%;
+    text-align: start;
 }
 
-export default ContentRec;
+.title__RecContentf {
+    font-weight: 600;
+    font-size: 3vw;
+    line-height: 4vw;
+    /* display: flex;
+    align-items: center; */
+    margin: 3%;
+    text-align: start;
+}
+.subtitle__RecContent {
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 27px;
+    margin-bottom: 4%;
+    margin-left: 3%;
+    margin-right: 3%;
+    text-align: start;
+}
+.subtitle__RecContentf {
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 27px;
+    margin-bottom: 4%;
+    margin-left: 3%;
+    margin-right: 3%;
+    text-align: start;
+}
+.title__RecContentportfolio {
+    font-weight: 600;
+    font-size: 3vw;
+    line-height: 4vw;
+    /* display: flex;
+    align-items: center; */
+    margin: 3%;
+    text-align: start;
+    color: white;
+}
+.subtitle__RecContentportfolio {
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 27px;
+    margin: 3%;
+
+    text-align: end;
+    color: white;
+}
+.subtitle__RecContent2 {
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 27px;
+    margin-top: 4.8%;
+    margin-left: 22%;
+    margin-right: 3%;
+    text-align: end;
+}
+.myimg {
+  width: 100%;
+  height: auto;
+
+}
