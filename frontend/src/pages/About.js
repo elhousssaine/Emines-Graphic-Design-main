@@ -43,7 +43,7 @@ Whether you are a startup looking to establish a strong brand presence, an estab
       </div>
       </div>
       <div className="RecContentf  full-height d-flex flex-column">
-            <img src="/public/images/iPhone XC Mockup (3).png" alt="a balloon" class="myimg"></img><div className="row title__RecContentf">An Innovative & Multidisciplinary Team</div>
+            <img src="iPhone XC Mockup (3).png" alt="a balloon" class="myimg"></img><div className="row title__RecContentf">An Innovative & Multidisciplinary Team</div>
       <div className="row mt-auto">
         <div className="col subtitle__RecContentf">With EGX, say goodbye to the worries of turning your ideas into stunning designs and seamless final products. Whether it's a website or a mobile app, we handle everything from design to code.
 
