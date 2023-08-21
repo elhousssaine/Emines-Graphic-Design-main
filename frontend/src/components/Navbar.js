@@ -52,7 +52,7 @@ function Navbar() {
     >
       
         <NavLink
-          to="/"
+          to="/homex"
           id="LogoText"
           className="navbar-brand"
           style={{ color: light ? "#000000" : "white" }}
@@ -76,16 +76,16 @@ function Navbar() {
               className="nav-item p-2"
             >
               <NavLink
-                to="/about"
+                to="/udc"
                 className="nav-link active"
                 style={{ color: light ? "#000000" : "white" }}
               >
-                About
+                Design Club
               </NavLink>
             </li>
             <li className="nav-item p-2">
               <NavLink
-                to="/admin"
+                to="/portfolio"
                 className="nav-link active"
                 style={{ color: light ? "#000000" : "white" }}
               >
