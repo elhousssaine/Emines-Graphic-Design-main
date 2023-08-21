@@ -1,7 +1,7 @@
 .form-control {
     background-color: #F70F3F3;
     text-align: start;
-    margin-right: 35px;
+    margin-left: 90px;
     
 
 }
@@ -13,7 +13,7 @@
     }
     .contactForm input {
     width: 36vw;
-    height: 70px;
+    height: 50px;
     left: calc(50% - 530px/2 + 457.5px);
     top: calc(50% - 70px/2 + 2910px);
     background: #F3F3F3;
@@ -23,7 +23,7 @@
     .contactForm textarea {
     margin-top: 39px;
     width: 36vw;
-    height: 209px;
+    height: 130px;
     left: calc(50% - 530px/2 + 457.5px);
     top: calc(50% - 209px/2 + 3167.5px);
     border: 0px solid #000000;
@@ -63,19 +63,19 @@
 .contactForm h2 {
     text-align: start;
     font-weight: 600;
-    font-size: 32px;
+    font-size: 20px;
     line-height: 42px;
-    margin-right: 35px;
+    margin-left: 90px;
 }
 
 .contactForm {
     font-weight: 400;
-    font-size: 17px;
+    font-size: 12px;
     line-height: 27px;
     width: 530px;
     color: #2D2D2D;
-    margin-right: 40px;
-    margin-top: 60px;
+    margin-left: 110px;
+    margin-top: 55px;
     margin-bottom: 45px;
 }
 
@@ -85,9 +85,9 @@
 .contactForm button {
     display: block;
     border-radius: 0px;
-    width: 235px;
-    height: 80px;
-    margin-right: 35px;
+    width: 170px;
+    height: 70px;
+    margin-left: 90px;
     
 }
 
