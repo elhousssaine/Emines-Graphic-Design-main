@@ -5,14 +5,18 @@ import { Provider } from "react-redux";
 import store from "./store";
 import "./index.css";
 import Home from "./pages/Home";
-import About from "./pages/About";
 import Layout from "./pages/Layout";
 import Project from "./pages/Project";
 import Nopage from "./pages/Nopage";
 import Login from "./pages/Login";
 import Admin from "./pages/Admin";
+import About from "./pages/About";
+import Udc from "./pages/Udc";
+import Homex from "./pages/Homex";
+import Portfolio from "./pages/Portfolio";
 import RequireAuth from "./components/auth/RequireAuth";
 import RequireSudo from "./components/auth/RequireSudo";
+
 
 import UploadProject from "./pages/UploadProject";
 import UploadBlog from "./pages/UploadBlog";
@@ -30,7 +34,10 @@ root.render(
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
           <Route path="project/:prjId" element={<Project />} />
-           <Route path="about" element={<About />} />
+          <Route path="about" element={<About />} />
+          <Route path="udc" element={<Udc />} />
+           <Route path="homex" element={<Homex />} />
+          <Route path="portfolio" element={<Portfolio />} />
           <Route
             path="admin"
             element={
