@@ -1,14 +1,14 @@
 .footer__info {
     margin-top: 55px;
-    margin-left: 70px;
+    margin-left: 60px;
     margin-bottom: 60px;
     text-align: start;
 }
 
 .footer__info p {
 
-    font-weight: 400;
-    font-size: 17px;
+    font-weight: 100;
+    font-size: 7px;
     line-height: 27px;
     /* or 159% */
     text-align: start;
@@ -46,7 +46,7 @@
 .footer__info h2 {
     text-align: start;
     font-weight: 700;
-    font-size: 32px;
+    font-size: 23px;
     line-height: 42px;
 }
 @media(min-width: 777px) {
@@ -54,16 +54,15 @@
     .footer__info p {
         margin-top: 30px;
         text-align: start;
-        font-weight: 550;
-        font-size: 37px;
-        line-height: 37px;
+        font-weight: 500;
+        font-size: 17px;
+        line-height: 19px;
     }
     .logofooter img{
     position: auto;
-    width: 275px;
-    height: 125px;
+    width: 175px;
     margin-top: 180px;
-    margin-left: -199px;
+    margin-left: -35px;
 }
 }
 
