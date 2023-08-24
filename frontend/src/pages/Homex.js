@@ -1,7 +1,6 @@
 import React from "react";
 import "./Navbar.css";
 import { NavLink } from "react-router-dom";
-import { NavLink } from "react-router-dom";
 import "./Udc.css";
 import MainRec from "../components/MainRec";
 
