@@ -32,11 +32,12 @@ root.render(
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Layout />}>
-          <Route index element={<Home />} />
+          <Route index element={<Homex />} />
           <Route path="project/:prjId" element={<Project />} />
           <Route path="about" element={<About />} />
           <Route path="udc" element={<Udc />} />
            <Route path="homex" element={<Homex />} />
+           <Route path="home" element={<Home />} />
           <Route path="portfolio" element={<Portfolio />} />
           <Route
             path="admin"
