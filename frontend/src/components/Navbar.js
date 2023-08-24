@@ -94,12 +94,11 @@ function Navbar() {
             </li>
             <li
               className="nav-item p-2"
-              onClick={() => {
-                window.location.replace("/#footer_section_id");
-              }}
+
+        
             >
               <NavLink
-                to="/"
+                to="/home"
                 className="nav-link active"
                 style={{ color: light ? "#000000" : "white" }}
               >
