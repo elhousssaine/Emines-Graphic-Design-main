@@ -2,6 +2,7 @@
     background-color: #F70F3F3;
     text-align: start;
     margin-left: 90px;
+    padding: 30px;
     
 
 }
@@ -74,7 +75,7 @@
     line-height: 27px;
     width: 530px;
     color: #2D2D2D;
-    margin-left: 110px;
+    margin-right: calc(90% - 780px/2 + 457.5px);
     margin-top: 55px;
     margin-bottom: 45px;
 }
