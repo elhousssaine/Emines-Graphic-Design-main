@@ -61,7 +61,9 @@
     .logofooter img{
     position: auto;
     width: 175px;
-    margin-top: 180px;
+
+    margin-top: 160px;
+
     margin-left: -35px;
 }
 }
