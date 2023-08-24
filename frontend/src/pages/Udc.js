@@ -14,9 +14,12 @@ function Udc() {
           alt="Animated GIF"
           className="logo"
         />
-        <h1>UDC | UM6P <br /> DESIGN CLUB</h1>
+
+        
       </div>
-      <br />
+       <br />
+      
+
       The Club is a gathering point for students interested in all disciplines of Art and Design with the aim of promoting and supporting an enthusiasm for visual arts. Students are organized in a team format for a year-long stretch with the option to stay longer if they choose to. During the year, all team members are given weekly workshops and assignments that complement existing skills and develop new ones.
 
 Examples of these skills are 3D visualization, rapid rendering, color theory, sculpture, advanced media, etc. In addition to acquiring these skills, members are expected to pursue their individual art works that utilize these new skills in original works of art, thus applying the newly acquired skills in practical situations in line with AUM’s educational philosophy that strongly emphasizes translating theory into practice.
