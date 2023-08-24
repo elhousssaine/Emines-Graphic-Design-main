@@ -26,7 +26,10 @@ function Udc() {
   id="Portfoliolink"
 >
   Check out our portfolio
-</NavLink>  &nbsp;&nbsp;  &nbsp;&nbsp; <a className="link"  href="/Home">Hire us</a>.
+</NavLink>  &nbsp;&nbsp;  &nbsp;&nbsp;  <NavLink
+  to="/home"
+  id="Contactlink"
+>Hire us</NavLink>.
 
       <br /><br />
       <img
